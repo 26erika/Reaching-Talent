@@ -8,10 +8,10 @@ class RecruiterLogin extends Component {
         <img className="logo-astra" src={Logo} alt="logo" />
         <div className="container-login-recruiter">
           <h3>
-            To have the applicant's history, Please enter your User name and
+            To get the applicant's history, Please enter your User name and
             your Password
           </h3>
-          <section>
+          <section className="section-login">
             <form className="form-login-recruiter">
               <p>User Name</p>
               <input placeholder="First Name" />
