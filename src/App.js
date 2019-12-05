@@ -10,11 +10,11 @@ import LoginForm from './Components/Candidate/Pages/Home.js';
 function App() {
   return (
 
-    
+  <div>
     < LoginForm />
 
     <RecruiterLogin/>
-    
+  </div>
 
   );
 }
