@@ -32,6 +32,11 @@ background-color: #edebe9;
   border-radius: 10%;
   margin-bottom: 5%;
 }
+
+.loginForm{
+  text-align: center;
+}
+
 .results{
   text-align: center;
 }
@@ -39,3 +44,4 @@ background-color: #edebe9;
   margin-top: 5%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
