@@ -1,6 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'semantic-ui-react'
+
+const ButtonExampleButton = () => <Button>Click Here</Button>
+
+
+
 
 function App() {
   return (
@@ -19,6 +25,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <button class="ui button">Click Here</button>
     </div>
   );
 }
