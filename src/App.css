@@ -17,6 +17,12 @@ background-color: #edebe9;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.section-login{
+  border: solid 3px #ffc300 ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
 .form-login-recruiter{
   color: #6b0848;
   flex-direction: column;
@@ -25,4 +31,11 @@ background-color: #edebe9;
 .button-login{
   border-radius: 10%;
   margin-bottom: 5%;
+}
+.results{
+  text-align: center;
+}
+.title-area{
+  margin-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
