@@ -4,7 +4,7 @@ const data = {
         answerTwo : "respuesta dos",
         answerThree : "respuesta tres",
         succes :5
-         
+
 }
 
 export default data;

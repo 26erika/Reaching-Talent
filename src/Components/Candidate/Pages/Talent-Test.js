@@ -1,29 +1,48 @@
-import React, from 'react';
+import React, {Component} from 'react';
 import Axios from 'axios';
-import Logo from "../../../Images/astra-logo.png";
+import Logo from '../../../Images/astra-logo.png';
+import Data from '../Elements/dataFalse.js';
 
 
 class TalentTest extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      questions = []
+      questions: [],
+      randomQuestions: []
     }
-  }
+  };
+
+  componentDidMount() {
+     Axios.get(`https://jsonplaceholder.typicode.com/users`)
+       .then(res => {
+         const questions = res.data;
+         this.setState({ questions });
+       })
+       .then(console.log())
+   }
+
+handleClick(){
+  const randomItems = Math.floor(Math.random() * 10) + 1;
+  const randomQuestions = this.state.questions[randomItems];
+  console.log(this.state.questions);
+  console.log(randomQuestions);
 }
 
 
-axios = () => {
-    axios.get('/')
-      .then(function (response) {
-        return
-      })
-      .catch(function (error) {
+render(){
+  return (
+    <div className= "questions">
+        <img className="logo-astra" src={Logo} alt="logo" />
+        <div className="container">
 
-      })
-      .finally(function () {
+          <button onClick = { () => this.handleClick(this.state.questions)}>Start test
+          </button>
+        </div>
 
-      });
+    </div>
+
+  )
 }
-
+}
   export default TalentTest;
