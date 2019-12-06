@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Axios from 'axios';
 import Logo from '../../../Images/astra-logo.png';
+import Timer from '../Elements/Timer.js'
 import baseURL from '../../../Constant/Env';
 
 
@@ -49,22 +50,26 @@ render(){
     <div className= "questions">
         <img className="logo-astra" src={Logo} alt="logo" />
 
+        <div className="testInstructions">Choose one of </div>
 
 
         <div className="container">
 
-        <div>
+          <div>
             {this.state.questions.map((item) => (
                   <div>
                     <h2>{item.content}</h2>
                     <input type="radio" name="radio"  /> {item.answerOne}
                     <input type="radio" name="radio" /> {item.answerTwo}
                     <input type="radio"  name="radio" /> {item.answerThree}
-                    </div>  
+                    </div>
               ))}
-              </div>
+          </div>
 
-      </div>
+          <div>
+            <Timer />
+          </div>
+        </div>
 
       <button onClick = { () => this.handleClick(this.state.questions)}>Finish test
       </button>
