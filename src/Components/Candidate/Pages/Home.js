@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
+import TalentTest from './Talent-Test.js'
 
 class LoginForm extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class LoginForm extends Component {
   handleSubmit(event) {
     alert('The test will begin');
     event.preventDefault();
-  }
+    }
 
 render() {
   return (
@@ -34,15 +35,17 @@ render() {
               Email
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
-          
+
           <div class="field">
-            <div class="ui checkbox">
+            <div class="checkbox">
               <input type="checkbox" class="hidden" readonly="" tabindex="0" />
               <label>I agree to the Terms and Conditions</label>
             </div>
           </div>
           <button type="submit" class="button">Submit</button>
         </form>
+
+        < TalentTest />
       </div>
 
     </div>
