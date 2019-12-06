@@ -13,14 +13,19 @@ class TalentTest extends Component{
     }
   };
 
+  allResults=()=>{}
+
   componentDidMount() {
      Axios.get(baseURL + `/candidate`)
        .then(res => {
          const questions = res.data;
          this.setState({ questions });
        })
-       .then(console.log())
-   }
+       .then(console.log());  
+
+       
+    }
+    
 
 handleClick(){
   const randomItems = Math.floor(Math.random() * 7) + 1;
