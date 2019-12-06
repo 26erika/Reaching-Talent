@@ -1,3 +1,3 @@
-const baseURL = 'https://api.linkedin.com/v1/people/~' ;
+const baseURL = 'https://reaching-talent.herokuapp.com' ;
 
 export default baseURL;
