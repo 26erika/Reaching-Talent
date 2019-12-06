@@ -6,7 +6,7 @@ background-color: #edebe9;
   width: 30%;
 }
 .container-login-recruiter{
-  border: solid 5px #6b0848;
+  border: solid 5px #fbbd08;
   width: 80%;
   margin-left: 10%;
   margin-top: -5%;
@@ -29,7 +29,7 @@ background-color: #edebe9;
   margin-bottom: 5%;
 }
 .button-login{
-  border-radius: 10%;
+  border-radius: 50%;
   margin-bottom: 5%;
 }
 
@@ -54,15 +54,18 @@ background-color: #edebe9;
 }
 .results{
   text-align: center;
+ 
 }
 .button-sign-out{
   display: flex;
   justify-content: right;
+  border-radius: 50%;
 }
 .title-area{
   margin-top: 5%;
   margin-bottom: 10%;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 .all-results{
   width: 90%;
@@ -74,10 +77,29 @@ background-color: #edebe9;
   align-items: center;
 }
 .card{
-  border: solid 2px #ffc300;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #AD3E6F;
+  float: left;
+  color: #edebe9;
+  position: relative;
+  width: calc(60% * .3333 - 30px + .3333 * 30px);
+  height: 280px;
+  margin: auto;
+  border-radius: 25px;
 }
+
+.navRecluter{
+  position:fixed;
+  margin-right: 0px;
+}
+.iconUser{
+  padding-top: 20px;
+}
+
+.buttonSingOut{
+  position: center;
+  background-color: transparent;
+}
+
 
 .questions{
   text-align: center;
