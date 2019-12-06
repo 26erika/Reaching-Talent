@@ -50,27 +50,26 @@ render(){
 
     <div className= "questions">
         <img className="logo-astra" src={Logo} alt="logo" />
+
+
+
         <div className="container">
 
-          <button onClick = { () => this.handleClick(this.state.questions)}>Start test
-          </button>
-
-
-        </div>
-
-        <ul>
+        <div>
             {this.state.questions.map((item) => (
-               <li className="table">
-                  <tbody>
+                  <div>
                     <h2>{item.content}</h2>
-                    <input type="radio"  /> {item.answerok}
-                    <input type="radio" /> {item.answerTwo}
-                    <input type="radio" /> {item.answerThree}
-
-                    </tbody>
-                </li>
+                    <input type="radio" name="radio"  /> {item.answerOne}
+                    <input type="radio" name="radio" /> {item.answerTwo}
+                    <input type="radio"  name="radio" /> {item.answerThree}
+                    </div>  
               ))}
-        </ul>
+              </div>
+
+      </div>
+
+      <button onClick = { () => this.handleClick(this.state.questions)}>Finish test
+      </button>
 
     </div>
 
