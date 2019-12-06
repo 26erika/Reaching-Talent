@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
 import DevWoman from "../../../Images/devWomen.png"
-import DevMen from "../../../Images/devMen.png"
+import DevMen from "../../../Images/devMen1.png"
 import Axios from 'axios';
 import baseURL from '../../../Constant/Env';
 import {  Grid, Segment, Button} from 'semantic-ui-react'
