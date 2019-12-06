@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
-import { Button, Icon } from 'semantic-ui-react'
+import { Button} from 'semantic-ui-react'
 
 class RecruiterLogin extends Component {
 constructor(props){
@@ -48,9 +48,7 @@ handleLogin = (e) => {
               <p>Password</p>
               <input type="password" value={this.setState.password} onChange={this.handlePassword} user="password" placeholder="Password" />
             </form>
-            <Button icon className="button-login" onClick={this.handleLogin}  type="submit">
-                <Icon name='sign-in'/>
-            </Button>
+            <Button color='yellow' className="button-login" onClick={this.handleLogin} >SING IN</Button>
           </section>
         </div>
       </div>
