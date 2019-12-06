@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
 
+
 class LoginForm extends Component {
   constructor(props) {
     super(props);
@@ -38,9 +39,11 @@ render() {
           <div class="field">
             <div class="checkbox">
               <input type="checkbox" class="hidden" readonly="" tabindex="0" />
+
               <label>I agree to the Terms and Conditions</label>
             </div>
           </div>
+          
           <button type="submit" onClick={() => this.props.history.push('/talent-test')} className="button">Submit</button>
         </form>
       </div>
