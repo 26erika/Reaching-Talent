@@ -42,10 +42,8 @@ render() {
               <label>I agree to the Terms and Conditions</label>
             </div>
           </div>
-          <button type="submit" class="button">Submit</button>
+          <button type="submit" onClick={() => this.props.history.push('/talent-test')} class="button">Submit</button>
         </form>
-
-        < TalentTest />
       </div>
 
     </div>
