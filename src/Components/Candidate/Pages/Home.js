@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
+import DevWoman from "../../../Images/devWomen.png"
+import DevMen from "../../../Images/devMen.png"
+import Axios from 'axios';
+import baseURL from '../../../Constant/Env';
+import {  Grid, Segment, Button} from 'semantic-ui-react'
 
 class LoginForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      value: '',
+      contact:[]};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,32 +24,53 @@ class LoginForm extends Component {
   handleSubmit(event) {
     alert('The test will begin');
     event.preventDefault();
+
+    const contact = {
+      contact: this.state.contact
     }
+    Axios.post((baseURL + `/recruiter`), {contact})
+       .then(res => {
+         console.log(res);
+         console.log(res.data); 
+       })
+    }
+
 
 render() {
   return (
+    
     <div className="loginForm">
       <img className="logo-astra" src={Logo} alt="logo" />
-      <h1>Reaching Talent</h1>
-
-      <p>Guessing if you can be part of AstraZeneca's family?</p>
-      <p>Ẃelcome to our app.....</p>
-
-    <div>
-        <form onSubmit={this.handleSubmit}>
-            <label>
+      <div>
+      <h1 className="title-login">Reaching Talent</h1>
+      <Grid columns='equal'>
+    <Grid.Column>
+      <Segment color="yellow"><img className="img-login" src={DevWoman}></img></Segment>
+    </Grid.Column>
+    <Grid.Column width={6}>
+      <Segment color="yellow" className="form"><h3>Guessing if you can be part of AstraZeneca's family?</h3>
+      <h5>Ẃelcome to our app.....</h5>
+      <form onSubmit={this.handleSubmit}>
+            <h5>
               Email
             <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
+          </h5>
 
           <div class="field">
             <div class="checkbox">
               <input type="checkbox" class="hidden" readonly="" tabindex="0" />
-              <label>I agree to the Terms and Conditions</label>
+              <p>I agree to the Terms and Conditions</p>
             </div>
           </div>
-          <button type="submit" onClick={() => this.props.history.push('/talent-test')} className="button">Submit</button>
+          <Button type="submit" onClick={() => this.props.history.push('/talent-test')} className="button" active>Submit</Button>
         </form>
+      </Segment>
+    </Grid.Column>
+    <Grid.Column>
+      <Segment color="yellow"><img className="img-login" src={DevMen}></img></Segment>
+    </Grid.Column>
+  </Grid>
+      
       </div>
 
     </div>
