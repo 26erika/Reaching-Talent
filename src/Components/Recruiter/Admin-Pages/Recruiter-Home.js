@@ -10,14 +10,24 @@ constructor(props){
       password:'123456'
     }
 }
-handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
+
+
+handleUser = (e)=> {
+  this.setState({user: e.target.value});
+}
+handlePassword = (e) => {
+  this.setState({password: e.target.value});
+}
+
+handleLogin = (e) => {
+  if(this.state.user === 'prueba') {
+    alert("Test already executed")
   }
-/*login =()=>{
-  if(this.user === this.handleChange){
-    this.history.push('./area');
-  }
-}*/
+  else{this.props.history.push('/area')
+console.log("cambio de página")}
+  // console.log("User: " + this.state.user);
+  // console.log("Password: " + this.state.password);
+}
 
   render() {
     return (
@@ -31,13 +41,15 @@ handleChange(event) {
           <section className="section-login">
             <form className="form-login-recruiter">
               <p>User Name</p>
-              <input value={this.user} name="user" placeholder="User Name" />
+              {/* value={this.user} */}
+              <input value={this.setState.user} onChange={this.handleUser} name="user" placeholder="User Name" />
             </form>
-            <form className="form-login-recruiter">
+            <form className="form-login-recruiter"> 
               <p>Password</p>
-              <input value={this.password} user="password" placeholder="Password" />
+              <input  value={this.setState.password} onChange={this.handlePassword} user="password" placeholder="Password" />
             </form>
-            <button className="button-login" onClick={() => this.props.history.push('/area') } type="submit">Submit</button>
+            {/* onClick={() => this.props.history.push('/area') } */}
+            <button className="button-login" onClick={this.handleLogin} type="submit">Submit</button>
           </section>
         </div>
       </div>
