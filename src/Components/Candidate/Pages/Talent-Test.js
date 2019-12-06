@@ -3,8 +3,9 @@ import Axios from 'axios';
 import Logo from '../../../Images/astra-logo.png';
 import Timer from '../Elements/Timer.js';
 import baseURL from '../../../Constant/Env';
+import { Card } from 'semantic-ui-react';
+import { Message } from 'semantic-ui-react';
 import { Button } from 'semantic-ui-react'
-
 
 
 
@@ -59,17 +60,16 @@ render(){
         <img className="logo-astra" src={Logo} alt="logo" />
 
         <div className="testInstructions">
-          <div class="ui message">
-            <div class="header"></div>
-              <p>Hi!</p>
-              <p>In this space you will be able to test your skills and send a pre-application to our database automatically. </p>
+        <div class="ui message">
+          <div class="header"></div>
+            <p>Hi!</p>
+            <p>In this space you will be able to test your skills and send a pre-application to our database automatically. </p>
 
-              <p>The correct answers and the total test execution time will be taken into your account. </p>
+            <p>The correct answers and the total test execution time will be taken into your account. </p>
 
-              <p>In order to get a better score, consider that all exercises are multiple-choice; you may want to be guided by the timer below the board.  </p>
-              
-            </div>
+            <p>In order to get a better score, consider that all exercises are multiple-choice; you may want to be guided by the timer below the board.  </p>
 
+        </div>
 
         </div>
 
