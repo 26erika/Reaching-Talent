@@ -3,18 +3,16 @@ import './App.css';
 
 
 import RecruiterLogin from './Components/Recruiter/Admin-Pages/Recruiter-Home';
+import Routes from './Components/Routes';
 
 
-import LoginForm from './Components/Candidate/Pages/Home.js';
-import TalentTest from './Components/Candidate/Pages/Talent-Test.js';
 function App() {
   return (
 
   <div>
-    < LoginForm />
-    < TalentTest />
 
-    <RecruiterLogin/>
+    <Routes/>
+
   </div>
 
   );

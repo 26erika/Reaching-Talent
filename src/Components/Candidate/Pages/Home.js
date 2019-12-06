@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
 
-class LoginForm extends React.Component {
+class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};

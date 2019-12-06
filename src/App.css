@@ -17,6 +17,12 @@ background-color: #edebe9;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.section-login{
+  border: solid 3px #ffc300 ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 10%;
+}
 .form-login-recruiter{
   color: #6b0848;
   flex-direction: column;
@@ -29,4 +35,24 @@ background-color: #edebe9;
 
 .loginForm{
   text-align: center;
+}
+
+.results{
+  text-align: center;
+}
+.title-area{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.all-results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  border: solid 2px #ffc300;
+  text-align: left;
 }
