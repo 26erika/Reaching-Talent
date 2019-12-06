@@ -42,6 +42,17 @@ background-color: #edebe9;
 }
 .title-area{
   margin-top: 5%;
+  margin-bottom: 10%;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.all-results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  border: solid 2px #ffc300;
+  text-align: left;
+}
