@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
 import Axios from "axios";
 import baseURL from "../../../Constant/Env";
+import { Button, Icon} from 'semantic-ui-react'
 
 class Area extends Component {
   constructor(props) {
@@ -26,28 +27,28 @@ class Area extends Component {
 
   render() {
     if (this.state.results === null) {
-      return <p>fetching</p>;
+      return <p>Loading</p>;
     } else {
       return (
         <div className="results">
           <img className="logo-astra" src={Logo} alt="logo" />
           <div className="container-login-recruiter">
-            <button onClick={() => this.props.history.push("/recruiter-login")}>
-              [->
-            </button>
+            <Button icon onClick={() => this.props.history.push("/recruiter-login")}>
+            <Icon name='sign-out' />
+            </Button>
             <h2 className="title-area">Candidates who passed the test.</h2>
             <div>
-              <ul>
+              <div className="all-results">
                 {this.state.results.map(item => {
                   return (
-                    <li>
-                      <h5>Contact: {item.contact}</h5>
-                      <h6>Result: {item.result}</h6>
-                      <h6>Time: {item.time}</h6>
-                    </li>
+                    <div div className="card">
+                      <h4>Contact: {item.contact}</h4>
+                      <h5>Result: {item.result}</h5>
+                      <h5>Time: {item.time}</h5>
+                    </div>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           </div>
         </div>

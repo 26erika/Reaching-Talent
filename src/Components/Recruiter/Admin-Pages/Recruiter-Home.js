@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
+import { Button, Icon } from 'semantic-ui-react'
 
 class RecruiterLogin extends Component {
 constructor(props){
     super(props);
     this.state = {
-      user:'prueba',
+      user:'astra',
       password:'123456'
     }
 }
@@ -20,13 +21,11 @@ handlePassword = (e) => {
 }
 
 handleLogin = (e) => {
-  if(this.state.user === 'prueba') {
-    alert("Test already executed")
+  if(this.state.user === 'astra') {
+    this.props.history.push('/area')
   }
-  else{this.props.history.push('/area')
-console.log("cambio de página")}
-  // console.log("User: " + this.state.user);
-  // console.log("Password: " + this.state.password);
+  else{alert("This user isn't registered")}
+  
 }
 
 
@@ -47,11 +46,11 @@ console.log("cambio de página")}
             </form>
             <form className="form-login-recruiter"> 
               <p>Password</p>
-              <input  value={this.setState.password} onChange={this.handlePassword} user="password" placeholder="Password" />
+              <input type="password" value={this.setState.password} onChange={this.handlePassword} user="password" placeholder="Password" />
             </form>
-
-            <button className="button-login" onClick={this.handleLogin} type="submit">Submit</button>
-            <button className="button-login" onClick={() => this.props.history.push('/area') }  type="submit">Submit</button>
+            <Button icon className="button-login" onClick={this.handleLogin}  type="submit">
+                <Icon name='sign-in'/>
+            </Button>
           </section>
         </div>
       </div>
