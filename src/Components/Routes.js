@@ -7,6 +7,8 @@ import TalentTest from './Candidate/Pages/Talent-Test.js';
 
 import Area from "./Recruiter/Admin-Pages/Area";
 
+import Feedback from "./Candidate/Pages/Feedback";
+
 
 
 class Routes extends Component{
@@ -17,7 +19,7 @@ class Routes extends Component{
                 <Route exact path='/recruiter-login' component={RecruiterLogin}/>
 
               
-
+                <Route exact path='/feedback' component={Feedback}/>
                 <Route exact path='/area' component={Area}/>
                 <Route exact path='/talent-test' component={TalentTest}/>
 
