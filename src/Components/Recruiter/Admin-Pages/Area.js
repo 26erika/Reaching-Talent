@@ -7,20 +7,17 @@ class Area extends Component {
  constructor(props){
      super (props)
         
- 
-        // Make a request for a user with a given ID
-        Axios.get('/user?ID=12345')
-          .then(function (response) {
-            // handle success
-            console.log(response);
-          })
-          .catch(function (error) {
-            // handle error
-            console.log(error);
-          })
-          .finally(function () {
-            // always executed
-          });
+ componentDidMount=()=>{
+    Axios({
+        method: 'GET',
+        url: baseURL + `/orders`,
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8',
+          "Access-Control-Allow-Origin": "*",
+          'Authorization': ''
+        }
+      })
+ }
      
  }
     render() {
@@ -31,7 +28,7 @@ class Area extends Component {
         <div className= "results">
             <img className="logo-astra" src={Logo} alt="logo" />
             <div className="container-login-recruiter">
-                <button>[-></button>
+                <button onClick={() => this.props.history.push('/recruiter-login')}>[-></button>
                 <h2 className="title-area">Candidates who passed the test.</h2>
                 <div>
                     <Card/>
