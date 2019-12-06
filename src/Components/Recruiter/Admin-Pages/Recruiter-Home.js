@@ -1,7 +1,24 @@
 import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
+import Area from "./Area";
 
 class RecruiterLogin extends Component {
+constructor(props){
+    super(props);
+    this.state = {
+      user:'prueba',
+      password:'123456'
+    }
+}
+handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+/*login =()=>{
+  if(this.user === this.handleChange){
+    this.history.push('./area');
+  }
+}*/
+
   render() {
     return (
       <div className="login-recruiter">
@@ -14,13 +31,13 @@ class RecruiterLogin extends Component {
           <section className="section-login">
             <form className="form-login-recruiter">
               <p>User Name</p>
-              <input placeholder="First Name" />
+              <input value={this.user} name="user" placeholder="User Name" />
             </form>
             <form className="form-login-recruiter">
               <p>Password</p>
-              <input placeholder="Last Name" />
+              <input value={this.password} user="password" placeholder="Password" />
             </form>
-            <button className="button-login" type="submit">Submit</button>
+            <button className="button-login" onClick={() => this.props.history.push('/area') } type="submit">Submit</button>
           </section>
         </div>
       </div>
