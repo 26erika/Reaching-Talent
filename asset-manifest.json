@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/Reaching-Talent/static/css/main.7482a0ec.chunk.css",
-    "main.js": "/Reaching-Talent/static/js/main.8e88901b.chunk.js",
-    "main.js.map": "/Reaching-Talent/static/js/main.8e88901b.chunk.js.map",
+    "main.css": "/Reaching-Talent/static/css/main.2863fe81.chunk.css",
+    "main.js": "/Reaching-Talent/static/js/main.97cb6df0.chunk.js",
+    "main.js.map": "/Reaching-Talent/static/js/main.97cb6df0.chunk.js.map",
     "runtime-main.js": "/Reaching-Talent/static/js/runtime-main.5c37397f.js",
     "runtime-main.js.map": "/Reaching-Talent/static/js/runtime-main.5c37397f.js.map",
-    "static/js/2.2028300b.chunk.js": "/Reaching-Talent/static/js/2.2028300b.chunk.js",
-    "static/js/2.2028300b.chunk.js.map": "/Reaching-Talent/static/js/2.2028300b.chunk.js.map",
+    "static/js/2.7db19a18.chunk.js": "/Reaching-Talent/static/js/2.7db19a18.chunk.js",
+    "static/js/2.7db19a18.chunk.js.map": "/Reaching-Talent/static/js/2.7db19a18.chunk.js.map",
     "index.html": "/Reaching-Talent/index.html",
-    "precache-manifest.1f4baafb46be0c24f76ebca2a680719a.js": "/Reaching-Talent/precache-manifest.1f4baafb46be0c24f76ebca2a680719a.js",
+    "precache-manifest.cb441f769694ca29e2c08aea0a494ec9.js": "/Reaching-Talent/precache-manifest.cb441f769694ca29e2c08aea0a494ec9.js",
     "service-worker.js": "/Reaching-Talent/service-worker.js",
-    "static/css/main.7482a0ec.chunk.css.map": "/Reaching-Talent/static/css/main.7482a0ec.chunk.css.map",
-    "static/js/2.2028300b.chunk.js.LICENSE": "/Reaching-Talent/static/js/2.2028300b.chunk.js.LICENSE",
-    "static/media/astra-logo.png": "/Reaching-Talent/static/media/astra-logo.dcddc6b5.png"
+    "static/css/main.2863fe81.chunk.css.map": "/Reaching-Talent/static/css/main.2863fe81.chunk.css.map",
+    "static/js/2.7db19a18.chunk.js.LICENSE": "/Reaching-Talent/static/js/2.7db19a18.chunk.js.LICENSE",
+    "static/media/astra-logo.png": "/Reaching-Talent/static/media/astra-logo.dcddc6b5.png",
+    "static/media/devMen1.png": "/Reaching-Talent/static/media/devMen1.9f38cd32.png",
+    "static/media/devWomen.png": "/Reaching-Talent/static/media/devWomen.eaa8796f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5c37397f.js",
-    "static/js/2.2028300b.chunk.js",
-    "static/css/main.7482a0ec.chunk.css",
-    "static/js/main.8e88901b.chunk.js"
+    "static/js/2.7db19a18.chunk.js",
+    "static/css/main.2863fe81.chunk.css",
+    "static/js/main.97cb6df0.chunk.js"
   ]
 }
