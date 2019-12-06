@@ -45,7 +45,7 @@ render() {
       <h1 className="title-login">Reaching Talent</h1>
       <Grid columns='equal'>
     <Grid.Column>
-      <Segment color="yellow"><img className="img-login" src={DevWoman}></img></Segment>
+      <Segment color="yellow"><img className="img-login" src={DevWoman} alt="imglogin"></img ></Segment>
     </Grid.Column>
     <Grid.Column width={6}>
       <Segment color="yellow" className="form"><h3>Guessing if you can be part of AstraZeneca's family?</h3>
@@ -62,12 +62,12 @@ render() {
               <p>I agree to the Terms and Conditions</p>
             </div>
           </div>
-          <Button type="submit" onClick={() => this.props.history.push('/talent-test')} className="button" active>Submit</Button>
+          <Button color='yellow' onClick={() => this.props.history.push('/talent-test')} className="button" active>START TEST</Button>
         </form>
       </Segment>
     </Grid.Column>
     <Grid.Column>
-      <Segment color="yellow"><img className="img-login" src={DevMen}></img></Segment>
+      <Segment color="yellow"><img className="img-login" src={DevMen} alt="imgin"></img></Segment>
     </Grid.Column>
   </Grid>
       

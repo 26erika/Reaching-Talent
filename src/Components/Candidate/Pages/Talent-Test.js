@@ -3,7 +3,9 @@ import Axios from 'axios';
 import Logo from '../../../Images/astra-logo.png';
 import Timer from '../Elements/Timer.js';
 import baseURL from '../../../Constant/Env';
-import { Card } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react'
+
+
 
 
 class TalentTest extends Component{
@@ -88,10 +90,7 @@ render(){
             <Timer />
           </div>
         </div>
-
-      <button onClick = { () => this.handleClick(this.state.questions)}>Finish test
-      </button>
-
+        <Button className="finishtest" attached='top'color="yellow" onClick = { () => this.handleClick(this.state.questions)}>Finish Test</Button>
     </div>
 
   )
