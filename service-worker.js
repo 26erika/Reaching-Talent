@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Reaching-Talent/precache-manifest.04223bfea7af24662fb16d6c49dd6f3c.js"
+  "/Reaching-Talent/precache-manifest.1f4baafb46be0c24f76ebca2a680719a.js"
 );
 
 self.addEventListener('message', (event) => {
