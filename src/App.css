@@ -6,14 +6,18 @@ background-color: #edebe9;
   width: 30%;
 }
 .container-login-recruiter{
-  border: solid 5px #fbbd08;
+  border: solid 5px #6b0848;
   width: 80%;
   margin-left: 10%;
   margin-top: -5%;
   font-family: Arial, Helvetica, sans-serif;
 }
 .container-login-recruiter h3{
-  color: rgb(26, 24, 24);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  padding: 1%;
+  background-color: #6b0848;
+  color: #ffc300;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -22,6 +26,8 @@ background-color: #edebe9;
   width: 30%;
   margin-left: 35%;
   margin-bottom: 10%;
+  background-color: #edebe9;
+  background-size: cover;
 }
 .form-login-recruiter{
   color: #6b0848;
