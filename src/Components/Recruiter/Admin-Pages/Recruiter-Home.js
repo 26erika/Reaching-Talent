@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
-import Area from "./Area";
 
 class RecruiterLogin extends Component {
 constructor(props){
@@ -10,6 +9,7 @@ constructor(props){
       password:'123456'
     }
 }
+
 
 
 handleUser = (e)=> {
@@ -28,6 +28,7 @@ console.log("cambio de página")}
   // console.log("User: " + this.state.user);
   // console.log("Password: " + this.state.password);
 }
+
 
   render() {
     return (
@@ -48,8 +49,9 @@ console.log("cambio de página")}
               <p>Password</p>
               <input  value={this.setState.password} onChange={this.handlePassword} user="password" placeholder="Password" />
             </form>
-            {/* onClick={() => this.props.history.push('/area') } */}
+
             <button className="button-login" onClick={this.handleLogin} type="submit">Submit</button>
+            <button className="button-login" onClick={() => this.props.history.push('/area') }  type="submit">Submit</button>
           </section>
         </div>
       </div>
