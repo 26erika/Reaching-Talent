@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import Axios from 'axios';
 import Logo from '../../../Images/astra-logo.png';
 import Check from '../../../Images/checked.png';
-import Data from '../Elements/dataFalse.js';
-import QuestionsContainer from '../Elements/QuestionsContainer.js';
-import baseURL from '../../../Constant/Env';
+
+
 
 
 class Feedback extends Component{
@@ -51,7 +49,7 @@ class Feedback extends Component{
                    <p className="textNormal" >
                    We will contact you as soon as possible for a personal interview</p>
               <textarea placeholder="Write your feedback" className="texArea1"></textarea>
-              <button className="butt">Send and finalize</button>
+              <button className="butt" onClick = { () => this.props.history.push('/')}>Send and finalize</button>
               </div>
               </div>
             </div>

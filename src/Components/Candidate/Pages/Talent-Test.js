@@ -32,6 +32,7 @@ class TalentTest extends Component{
     
 
 handleClick(){
+  this.props.history.push('/feedback')
   const randomItems = Math.floor(Math.random() * 7) + 1;
   const randomQuestions = this.state.questions[randomItems];
   console.log(this.state.questions);
@@ -46,12 +47,14 @@ handleClick(){
 
 
 render(){
-
+  
     if(this.state.questions === null) {
+      
       return (
         <p>fetching</p>
       )
     } else {
+      
       return (
 
 
