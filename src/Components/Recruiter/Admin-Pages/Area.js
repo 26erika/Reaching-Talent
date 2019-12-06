@@ -2,24 +2,23 @@ import React, { Component } from "react";
 import Logo from "../../../Images/astra-logo.png";
 import Card from "../Admin-Elements/Card";
 import Axios from "axios";
+import baseURL from '../../../Constant/Env'
+import Data from '../../Candidate/Elements/dataFalse'
 
 class Area extends Component {
- constructor(props){
-     super (props)
-        
+
  componentDidMount=()=>{
     Axios({
         method: 'GET',
-        url: baseURL + `/orders`,
+        url: {Data},
         headers: {
           'Content-Type': 'application/json;charset=UTF-8',
           "Access-Control-Allow-Origin": "*",
           'Authorization': ''
         }
       })
- }
-     
- }
+      
+    }
     render() {
     
  

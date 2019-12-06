@@ -1,13 +1,13 @@
-import React, from 'react';
-import Axios from 'axios';
+/*import React,{Component} from 'react';
+import axios from 'axios';
 import Logo from "../../../Images/astra-logo.png";
 
 
-class TalentTest extends React.Component{
+class TalentTest extends Component{
   constructor(props){
     super(props);
     this.state = {
-      questions = []
+      questions : []
     }
   }
 }
@@ -26,4 +26,4 @@ axios = () => {
       });
 }
 
-  export default TalentTest;
+  export default TalentTest;*/
