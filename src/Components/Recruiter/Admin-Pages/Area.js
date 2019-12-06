@@ -32,7 +32,7 @@ class Area extends Component {
       return (
         
         <div className="results">
-          <nav className="navRecluter">
+          <nav className="nav">
           <Button basic color='yellow'icon onClick={() => this.props.history.push("/recruiter-login")}>
           <Icon name='sign-out'size='big' iconPosition="right" color='yellow' />
           </Button>
