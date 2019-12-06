@@ -14,7 +14,7 @@ class Area extends Component {
   componentDidMount() {
     Axios.get(baseURL + `/recruiter`)
       .then(res => {
-        const results = JSON.parse(res.data);
+        const results = res.data;
         this.setState({ results });
       })
       .catch(e => {

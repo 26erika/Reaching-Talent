@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import Axios from 'axios';
 import Logo from '../../../Images/astra-logo.png';
-import Data from '../Elements/dataFalse.js';
-import QuestionsContainer from '../Elements/QuestionsContainer.js';
 import baseURL from '../../../Constant/Env';
 
 
@@ -18,7 +16,7 @@ class TalentTest extends Component{
   componentDidMount() {
      Axios.get(baseURL + `/candidate`)
        .then(res => {
-         const questions = JSON.parse(res.data);
+         const questions = res.data;
          this.setState({ questions });
        })
        .then(console.log())

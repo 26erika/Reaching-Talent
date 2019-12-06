@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {HashRouter, Route, NavLink} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import RecruiterLogin from "./Recruiter/Admin-Pages/Recruiter-Home";
 import LoginForm from "./Candidate/Pages/Home";
 

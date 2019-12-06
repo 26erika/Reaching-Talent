@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Logo from "../../../Images/astra-logo.png";
-import TalentTest from './Talent-Test.js'
 
 class LoginForm extends Component {
   constructor(props) {
