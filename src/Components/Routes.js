@@ -13,7 +13,7 @@ class Routes extends Component{
     render(){
         return(
             <HashRouter>
-                <Route exact path='/login-form' component={LoginForm}/>
+                <Route exact path='/' component={LoginForm}/>
                 <Route exact path='/recruiter-login' component={RecruiterLogin}/>
 
               
